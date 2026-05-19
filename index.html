@@ -15,7 +15,44 @@
     --font:'Segoe UI',system-ui,sans-serif
   }
   html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6}
+  
+  /* Forest Background */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d1117 0%, #0f1419 25%, #1a2726 50%, #0f1419 75%, #0d1117 100%);
+    background-size: 400% 400%;
+    animation: forestShift 15s ease infinite;
+    z-index: -2;
+    pointer-events: none;
+  }
+  
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(58, 155, 142, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(45, 212, 191, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 50% 0%, rgba(124, 92, 191, 0.03) 0%, transparent 60%);
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  @keyframes forestShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;position:relative}
 
   nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,17,23,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem}
   .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
@@ -29,7 +66,7 @@
 
   #home{min-height:90vh;display:flex;align-items:center;padding-top:80px}
   .hero-content{max-width:650px}
-  .hero-tag{display:inline-block;background:rgba(58,155,142,0.15);color:var(--accent2);font-size:0.8rem;padding:4px 12px;border-radius:20px;border:1px solid rgba(45,212,191,0.2);margin-bottom:1.2rem;letter-spacing:1px;text-transform:uppercase}
+  .hero-tag{display:inline-block;background:rgba(58,155,142,0.15);color:var(--accent2);font-size:0.8rem;padding:4px 12px;border-radius:20px;border:1px solid rgba(45,212,191,0.2);margin-bottom:1.2rem;letter-spacing:0.3px}
   .hero-title{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;line-height:1.15;margin-bottom:1rem;color:#fff}
   .hero-title span{color:var(--accent2)}
   .hero-sub{color:var(--text2);font-size:1.05rem;margin-bottom:2rem;max-width:480px}
@@ -195,9 +232,9 @@
   <div class="about-grid">
     <div class="about-text">
       <h2>About Me</h2>
-      <p>Hello! I'm Palak — a software engineer by profession and a creator by passion. By day, I write code and solve problems; by evening, I pick up a brush or a camera and do the same — just with color, light, and a little more mess.</p>
-      <p>There's something deeply satisfying about building things, whether it's an elegant piece of software or a painting that finally captures the mood of a misty morning. Both demand patience, iteration, and the courage to start over when something isn't working.</p>
-      <p>My canvases tend toward cool hues — deep forest greens, dusky blues, the pale gold of late-afternoon light. Nature is my most recurring subject and my most reliable muse. Photography is how I collect references and freeze fleeting moments; painting is how I interpret and reimagine them.</p>
+      <p>Hello! I'm Palak — a software engineer by profession and a creator by passion. By day, I write code and solve problems; by evening, I pick up a brush or a camera and do the same — just with different tools.</p>
+      <p>There's something deeply satisfying about building things, whether it's an elegant piece of software or a painting that finally captures the mood of a misty morning. Both demand patience, iteration, and a willingness to learn from mistakes.</p>
+      <p>My canvases tend toward cool hues — deep forest greens, dusky blues, the pale gold of late-afternoon light. Nature is my most recurring subject and my most reliable muse. Photography is how I freeze those fleeting moments of light and shadow.</p>
       <p>Most of my paintings are inspired by references and artists I admire. Every brushstroke and every click is my own — a process of learning, experimenting, and slowly finding my voice.</p>
       <div class="about-tags">
         <span class="tag">Nature</span>
@@ -251,8 +288,8 @@
   </div>
   <div class="disclaimer-box">
     <h3>⚠️ About the paintings</h3>
-    <p>The paintings showcased in this gallery are personally created by me — every brushstroke is my own. However, most are <strong>inspired by or loosely referenced from existing artworks, photographs, tutorials, and other sources</strong> found across the internet and in books.</p>
-    <p>I do not claim originality of concept or composition for those works. This gallery reflects my learning journey as a self-taught painter — a space to practice, experiment, and grow by studying talented artists around the world.</p>
+    <p>The paintings showcased in this gallery are personally created by me — every brushstroke is my own. However, most are <strong>inspired by or loosely referenced from existing artworks, photographs, and real-world scenes</strong>.</p>
+    <p>I do not claim originality of concept or composition for those works. This gallery reflects my learning journey as a self-taught painter — a space to practice, experiment, and grow by studying the work of artists I admire.</p>
     <p>The photographs are original works taken by me. If you are an original creator and see your work referenced here and have concerns, please reach out via the Contact section.</p>
   </div>
 </section>
