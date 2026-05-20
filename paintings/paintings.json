@@ -4,5 +4,101 @@
     "title": "Sunset and a tree",
     "description": "",
     "tag": "Nature"
+  },
+  {
+    "src": "paintings/BlueBlackTheme.jpg",
+    "title": "Blue Black Theme",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/FlowerRangoli.jpeg",
+    "title": "Flower Rangoli",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/GlassPainting.jpg",
+    "title": "Glass Painting",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/Krishna.jpg",
+    "title": "Krishna",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/KrishnaAndDiya.jpg",
+    "title": "Krishna and Diya",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/NorthernLights.jpg",
+    "title": "Northern Lights",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/PebblePainting.jpg",
+    "title": "Pebble Painting",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/RainAndCityLights.jpg",
+    "title": "Rain and City Lights",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/Rose.jpg",
+    "title": "Rose",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/Saturn.jpg",
+    "title": "Saturn",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/SnowyDay.jpg",
+    "title": "Snowy Day",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/Tree (2).png",
+    "title": "Tree",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/Waterfall.jpg",
+    "title": "Waterfall",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/Wave.jpg",
+    "title": "Wave",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/contrast.jpg",
+    "title": "Contrast",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/krishnaPainting.jpeg",
+    "title": "Krishna Painting",
+    "description": "",
+    "tag": "Art"
   }
 ]
