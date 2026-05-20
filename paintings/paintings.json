@@ -94,5 +94,23 @@
     "title": "Contrast",
     "description": "",
     "tag": "Art"
+  },
+  {
+    "src": "paintings/candle.jpg",
+    "title": "Candle",
+    "description": "",
+    "tag": "Art"
+  },
+  {
+    "src": "paintings/Flowers.jpg",
+    "title": "Flowers",
+    "description": "",
+    "tag": "Nature"
+  },
+  {
+    "src": "paintings/Bird.jpg",
+    "title": "Bird",
+    "description": "",
+    "tag": "Art"
   }
 ]
